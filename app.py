@@ -13,7 +13,7 @@ API_KEY = "5023f90d19e34618b1a995200e2d638e"  # ← Replace with your actual New
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
